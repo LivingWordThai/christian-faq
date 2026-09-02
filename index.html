@@ -169,10 +169,13 @@
   @media(max-width:600px){
     .hero{min-height:470px;padding:28px 22px}
     .nav{left:22px;right:22px}
-    .hero-content{margin-top:85px}
-    .hero-logo{width:112px;height:112px;right:22px;top:88px;opacity:.86}
+    .hero-content{margin-top:35px}
+    /* On mobile, keep only the compact brand logo.
+       The large decorative logo overlaps the hero headline on small screens. */
+    .hero-logo{display:none}
     .hero:after{right:-100px;top:90px}
     .sun{right:8%;top:100px;width:75px;height:75px}
+    h1{font-size:clamp(40px,10.5vw,48px);line-height:1.18}
     .content{padding:48px 16px 55px}
     h2{font-size:27px}
     .question{padding:16px 14px}
